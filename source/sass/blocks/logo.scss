@@ -1,0 +1,35 @@
+.logo {
+  padding-top: 27px;
+  margin-left: 15px;
+
+  &--footer {
+    margin-left: 125px;
+    margin-bottom: 10px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .logo {
+    padding-top: 60px;
+    margin-left: 0;
+
+    &--footer {
+      padding-top: 77px;
+
+      text-align: center;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .logo {
+    position: absolute;
+    z-index: 30;
+    top: -38px;
+    left: 648px;
+
+    &--footer {
+      top: 0;
+    }
+  }
+}

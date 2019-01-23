@@ -1,0 +1,36 @@
+.title-block {
+  font-family: $font-playfair;
+  font-size: 45px;
+  color: $color-title;
+  text-align: center;
+
+  &--big {
+    margin: 0;
+    margin-bottom: 28px;
+
+    font-size: 48px;
+    line-height: 1;
+    color: $color-text-2;
+    text-align: center;
+  }
+}
+
+@media #{$tablet-widths} {
+  .title-block {
+    text-align: left;
+
+    &--big {
+      font-size: 100px;
+      text-align: center;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .title-block {
+    &--big {
+      font-size: 60px;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.stages-work {
+  padding-top: 100px;
+  padding-bottom: 72px;
+
+  background-color: $color-background-1;
+}
+
+.stages-work__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 47px;
+
+  line-height: 1.2;
+}
+
+.stages-work__list {
+  @include reset-list();
+
+  margin-left: 15px;
+}
+
+.stages-work__item {
+  margin-bottom: 45px;
+}
+
+.stages-work__item:nth-child(3) {
+  margin-bottom: 38px;
+}
+
+.stages-work__item:nth-child(5) {
+  margin-bottom: 33px;
+}
+
+.stages-work__list-title {
+  margin-bottom: 35px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: $color-title-min-2;
+}
+
+.stages-work__list-text {
+  line-height: 1.4;
+}
+
+@media #{$tablet-widths} {
+  .stages-work {
+    padding-bottom: 117px;
+  }
+
+  .stages-work__title {
+    margin-top: 75px;
+  }
+
+  .stages-work__list {
+    counter-reset: number;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .stages-work__item {
+    counter-increment: number;
+
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    width: 320px;
+    margin-bottom: 80px;
+    padding-left: 50px;
+
+    &::before {
+      content: counter(number);
+
+      position: absolute;
+      top: -5px;
+      left: 0;
+
+      padding: 10px 15px;
+
+      font-size: 12px;
+      font-weight: 600;
+      color: $color-title;
+
+      background-color: $color-btn;
+      border-radius: 50%;
+    }
+  }
+
+  .stages-work__list-title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 37px;
+
+    font-size: 20px;
+  }
+
+  .stages-work__list-text {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .stages-work {
+    padding-bottom: 105px;
+  }
+
+  .stages-work__title {
+    margin-top: 25px;
+  }
+
+  .stages-work__list {
+    padding-top: 28px;
+  }
+
+  .stages-work__list-title {
+    padding-bottom: 40px;
+
+    font-size: 22px;
+  }
+
+  .stages-work__item {
+    width: 330px;
+    margin-bottom: 45px;
+
+    &::before {
+      top: 0;
+      left: 10px;
+
+      padding: 5px 10px;
+    }
+  }
+}

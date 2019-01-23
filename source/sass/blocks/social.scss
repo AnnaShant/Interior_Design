@@ -1,0 +1,45 @@
+.social__list {
+  @include reset-list();
+
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 15px;
+}
+
+@media #{$tablet-widths} {
+  .social__list {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 67px;
+  }
+
+  .social__item {
+    padding: 0 20px;
+  }
+
+  .social__link {
+
+    &--vk svg {
+      height: 30px;
+      width: 20px;
+    }
+
+    &--insta svg {
+      height: 30px;
+      width: 18px;
+    }
+
+    &--fb svg {
+      height: 18px;
+      width: 12px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .social__list {
+    padding-top: 150px;
+  }
+}

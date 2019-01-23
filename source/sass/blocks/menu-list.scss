@@ -1,0 +1,43 @@
+.menu-list {
+  @include reset-list();
+
+  margin-top: 99px;
+  padding-bottom: 70px;
+
+  text-align: center;
+}
+
+.main-nav--closed .menu-list {
+  display: none;
+}
+
+.main-nav--opened {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .menu-list {
+  display: block;
+}
+
+.menu-list__item {
+  padding: 14px 37px;
+}
+
+.menu-list__link {
+  padding: 20px 30px;
+
+  font-family: $font-raleway;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-text-2;
+
+  &:hover {
+    color: $color-btn;
+  }
+}
