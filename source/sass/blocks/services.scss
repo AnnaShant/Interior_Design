@@ -48,24 +48,18 @@
   }
 }
 
-.services__slider-controls-active label {
+.services__slider-item-active label {
   font-weight: 800;
-  color: $color-title;
+  color: #00203a;
 
   cursor: none;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: none;
-  }
 }
 
-.services__slider-controls li {
+.services__slider-item {
   padding: 12px 0;
 }
 
-.services__slider-controls ul {
+.services__slider-items {
   @include reset-list();
 }
 
@@ -124,22 +118,17 @@
     margin-bottom: 25px;
   }
 
-  .services__slider-controls ul {
+  .services__slider-items {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .services__slider-controls ul li {
+  .services__slider-item {
     width: 346px;
     margin-bottom: 52px;
     padding-right: 15px;
 
     line-height: 1.3;
-  }
-
-  .services__slider-controls ul li:nth-child(3),
-  .services__slider-controls ul li:nth-child(4) {
-   margin-bottom: 28px;
   }
 
   .services__sliders-item {
@@ -194,45 +183,60 @@
 
 @media #{$desktop-widths} {
   .services {
-    position: relative;
+    padding-bottom: 72px;
+  }
 
-    padding-bottom: 152px;
+  .services__container {
+    display: flex;
+
+    width: 1166px;
   }
 
   .services__sliders {
-    position: absolute;
-    top: 205px;
-    right: 367px;
-
     width: 880px;
     margin: 0 auto;
   }
 
   .services__title {
-    padding-top: 42px;
+    padding-top: 52px;
   }
 
-  .services__slider-controls {
-    margin-top: 78px;
+  .services__slider-items {
+    display: block;
+
+    padding-top: 22px;
+
+    font-size: 18px;
   }
 
-  .services__slider-controls ul li {
+  .services__slider-item {
     width: 200px;
+
     margin: 0;
     padding: 0;
 
-    margin-bottom: 75px;
-  }
-
-  .services__slider-controls ul {
-    display: block;
-
-    font-size: 18px;
+    margin-bottom: 73px;
   }
 
   .services__slider-controls label {
     font-size: 18px;
     font-weight: 200;
+  }
+
+  .services__slider-item-active {
+    width: 250px;
+    margin-left: 30px;
+  }
+
+  .services__slider-item-active label {
+    font-weight: 800;
+    color: #00203a;
+
+    cursor: none;
+  }
+
+  .services__sliders {
+    margin-top: 35px;
   }
 
   .services__sliders-title {

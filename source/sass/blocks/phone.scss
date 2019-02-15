@@ -1,0 +1,23 @@
+.phone {
+  display: none;
+}
+
+@media #{$desktop-widths} {
+  .phone {
+    display: block;
+
+    position: absolute;
+    top: 10px;
+    right: 100px;
+
+    padding-left: 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-title-min-2;
+
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+  }
+}

@@ -29,6 +29,8 @@
 @media #{$desktop-widths} {
   .title-block {
     &--big {
+      width: 475px;
+
       font-size: 60px;
       text-align: left;
     }

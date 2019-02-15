@@ -76,6 +76,7 @@
     padding-right: 60px;
 
     background-color: rgba(24, 44, 61, 0.9);
+    background-image: none;
   }
 
   .tagline__title {
@@ -99,5 +100,9 @@
     padding-right: 122px;
 
     font-size: 14px;
+
+    background-image: url("../img/arrow-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
   }
 }

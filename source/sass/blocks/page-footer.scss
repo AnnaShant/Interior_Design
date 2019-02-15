@@ -30,6 +30,10 @@
     position: relative;
   }
 
+  .page-footer__social {
+    margin: 0;
+  }
+
   .page-footer__text {
    position: absolute;
    top: 120px;
@@ -46,6 +50,8 @@
 @media #{$desktop-widths} {
   .page-footer__social {
     margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 150px;
   }
 
   .page-footer__text {

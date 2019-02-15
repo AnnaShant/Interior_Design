@@ -41,3 +41,15 @@
     color: $color-btn;
   }
 }
+
+@media #{$tablet-widths} {
+  .menu-list__link {
+    font-size: 35px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .menu-list__link {
+    font-size: 20px;
+  }
+}
